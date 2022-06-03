@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: Tomcat-kubernetes
+        app: tomcat-kubernetes
     spec:
       containers:
       - name: tomcat-kubernetes
