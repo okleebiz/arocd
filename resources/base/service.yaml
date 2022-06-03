@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-kubernetes
+  name: Tomcat-kubernetes
 spec:
   type: NodePort
   ports:
@@ -9,4 +9,4 @@ spec:
     targetPort: 8080
     NodePort: 30500
   selector:
-    app: hello-kubernetes
+    app: Tomcat-kubernetes
