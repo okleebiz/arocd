@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-kubernetes
+  name: Tomcat-Deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-kubernetes
+      app: Tomcat-kubernetes
   template:
     metadata:
       labels:
-        app: hello-kubernetes
+        app: Tomcat-kubernetes
     spec:
       containers:
-      - name: hello-kubernetes
+      - name: Tomcat-kubernetes
         image: python:2.7
         imagePullPolicy: IfNotPresent
         command: ["/bin/bash"]
